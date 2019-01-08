@@ -87,6 +87,10 @@ nav ul {
     padding: 0.75rem 0;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .products,
 .business-info {
   display: flex;
@@ -147,3 +151,97 @@ footer {
     padding: 4rem;
 }
 
+@media only screen and (max-width: 1024px) {
+    /* I found including these two properties as the instructions state, decreased the size of the font in the headline too much, making it not proportional to the original size. 
+    
+    .headline h2 {
+        font-size: 1rem;
+    }
+
+    .headline h4 {
+        font-size: 1.2rem;
+    } */
+
+    nav ul {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        text-align: center;
+    }
+
+    .product {
+        width: 47%;
+    }
+
+    .product.glasses {
+        display: none;
+    }
+
+    .info {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .headline h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: helvetica;
+    }
+
+    .headline h4 {
+        font-size: 0.77rem;
+        font-weight: bold;
+        font-family: helvetica;
+        padding-left: 3rem;
+        
+    } 
+
+    .headline {
+        width: 100%;
+        padding: 1rem 2rem;
+        top: 4.75rem;
+        
+    }
+
+    .main-banner {
+        height: 15rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        text-align: center;
+    }
+
+    .product {
+        width: 90%;
+        margin: auto;
+    }
+
+    .product.watch {
+        display: none;
+    }
+
+    .products,
+    .business-info {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: 90%;
+        margin: auto;
+        height: 0.1rem;
+        padding-bottom: 5rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
