@@ -7,9 +7,13 @@ body {
     font-family: Helvetica, sans-serif
 }
 
+/*  This is to find how the divs sit on the page. Remember to remove this property when you are finished styling your website.
 div {
     border: 1px solid black;
-}
+} */
+
+
+
 /* Use less code! You've been using too much code and confusing yourself. */
 .container {
     max-width: 960px;
@@ -41,12 +45,14 @@ div {
     height: 25rem;
 }
 
+/* My headline had a large space between itself and the header of the page.  */
 .headline {
-    width: 25rem;
-    margin-top: 9rem;
-    height: 10rem;
+    width: 20rem;
+    top: 9rem;
+    padding: 2rem 3rem;
     background-color: black;
     color: white;
+    position: relative;
 }
 
 .headline h4 {
@@ -81,30 +87,63 @@ nav ul {
     padding: 0.75rem 0;
 }
 
-.products
+.products,
 .business-info {
-    display: flex;
-    justify-content: space-between;
-    margin: 3rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .product {
-    width: 30%;
+  width: 30%;
 }
 
-.product-img {
-    border: 4px solid black;
-    padding: 2rem 0;
-    height: 9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+}
+
+.product-image img {
+  max-width: 8rem;
 }
 
 .description {
+  display: block;
+  padding: 0.5rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.info {
+  width: 35%;
+}
+
+.info,
+.title {
+    /* This is important because othering these two classes will only diaplay beside eachother. */
     display: block;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.title {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: black;
     color: white;
-    text-align: center;
-    padding: 5rem;
 }
+
+footer {
+    height: 5rem;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 4rem;
+}
+
