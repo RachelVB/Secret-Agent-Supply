@@ -1,0 +1,110 @@
+html {
+    font-size: 18px;
+    background-color: white;
+}
+
+body {
+    font-family: Helvetica, sans-serif
+}
+
+div {
+    border: 1px solid black;
+}
+/* Use less code! You've been using too much code and confusing yourself. */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Header */
+.company {
+    background-color: black;
+    color: white;
+}
+
+.company .container {
+    display: flex;
+    align-items: center;
+    padding: 0.66rem 0 0.66rem .5rem;
+}
+
+.company img {
+    height: 1.5rem;
+    padding-right: 1rem;
+}
+
+.main-banner {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+}
+
+.headline {
+    width: 25rem;
+    margin-top: 9rem;
+    height: 10rem;
+    background-color: black;
+    color: white;
+}
+
+.headline h4 {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+
+.headline h2 {
+    font-family: helvetica;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 3rem;
+    padding-top: 0.75rem;
+    line-height: 2.50rem;
+}
+
+nav {
+    /* We cannot use display: flex here. We must use it in our tl tag. */
+    background-color: firebrick;
+    color: white;
+}
+
+nav ul {
+    /* The defult value on any webpage is 'inline' so when we give our display property of 'flex' it will set it inline. */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.75rem 0;
+}
+
+.products
+.business-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 0;
+}
+
+.product {
+    width: 30%;
+}
+
+.product-img {
+    border: 4px solid black;
+    padding: 2rem 0;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5rem;
+}
